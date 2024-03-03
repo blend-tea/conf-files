@@ -111,13 +111,6 @@ else
 	" インサートモードでctrl-sをセーブしてノーマルモードに
 	inoremap <c-s> <Esc>:w<CR>
 endif
-" call plug#begin()
-" Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
-" Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
-" " Plug 'https://github.com/lifepillar/pgsql.vim' " PSQL Pluging needs :SQLSetType pgsql.vim
-" " Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
-" " Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
-" call plug#end()
 nnoremap <silent> <Esc><Esc> :noh<CR>
 
 
