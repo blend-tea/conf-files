@@ -17,3 +17,12 @@ local function close_terminal()
 end
 vim.keymap.set("t", "<C-/>", close_terminal, { desc = "Close Terminal" })
 vim.keymap.set("t", "<C-_>", close_terminal, { desc = "Close Terminal (same as C-/)" })
+
+-- copilot.lua accept keymaps
+vim.keymap.set("i", "<C-Right>", function()
+  require("copilot.suggestion").accept_word()
+end, { silent = true })
+
+vim.keymap.set("i", "<C-Enter>", function()
+  require("copilot.suggestion").accept_line()
+end)
